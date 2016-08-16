@@ -1,5 +1,381 @@
 $blueBack:#1AC6FF;
+$whiteBack:#FFFFFF;
+
+@mixin textT {
+	text-transform:uppercase;
+}
 
 body{
 	background:url('../_img/backgroundH.jpg');
+	background-size:cover;
+	background-attachment: fixed;
+	font-family: 'PT Sans', sans-serif;
+	font-size:16px;
+}
+/*head nav*/
+#head-nav{
+	padding-top:25px;
+	.logo{
+		margin-right:60px;
+		img{
+			width:130px;
+		}
+	}
+	.menu{
+		li{
+			float:left;
+			margin-left:10px;
+			
+			a{
+				color:$whiteBack;
+				padding:10px 5px;
+				text-decoration:none;
+			}
+		}
+	}
+	.login{
+		li{
+			float:left;
+			margin-left:5px;
+
+			a{
+				color:$whiteBack;
+				text-decoration:none;
+				color:#1AC6FF;
+				padding:10px 5px;
+				border:1px solid #1AC6FF;
+
+				&:first-child{
+				border:none;
+				}
+
+			}
+		}
+	}
+}
+/*launch*/
+#launch{
+	padding:200px 0;
+
+	h1{
+		font-size:3em;
+	    margin: 20px 0 15px;
+    	font-weight: 300;
+    	color:$whiteBack;
+		@include textT;
+	}
+	h5{
+	    margin-bottom: 33px;
+        font-size: 24px;
+        color:$whiteBack;
+	}
+	.btn-sart{
+	    padding:15px 70px;
+	    background:$blueBack;
+	    color:$whiteBack;
+	    border-radius:3px;
+	    text-decoration:none;
+	    @include textT;
+
+	    span{
+			margin-right:5px;
+	    }
+	}
+	.btn-tour{
+		padding:15px 35px;
+		border:1px solid $whiteBack;
+		color:$whiteBack;
+		@include textT;
+		text-decoration:none;
+		border-radius:3px;
+		margin-left:15px;
+
+		&:hover{
+			background:$whiteBack;
+			color:$blueBack;
+		}
+
+	}
+}
+/*first logo*/
+#firstLogo{
+	height:126px;
+	background:#F0F0F0;
+	padding-top:35px;
+
+	img{
+		margin-right:60px;
+	}
+}
+/*startup*/
+#startup{
+	padding-bottom:20px;
+	padding-top:80px;
+	border-bottom:1px solid #E9E9E9;
+	background:$whiteBack;
+
+	.tabs{
+
+		ul{
+
+			li{
+				display:inline-block;
+				padding-bottom:50px;
+
+				a{
+					text-decoration:none;
+					font-size:13px;
+					padding:20px 60px;
+
+				}
+			}
+		}
+		#first{
+
+			.startImg1{
+				img{
+					width:100%;
+				}
+			}
+
+			.startText1{
+				margin-top:80px;
+				h1{
+					font-size:34px;
+					margin-bottom:30px;
+				}
+				h5{
+					margin-bottom:30px;
+				}
+				p{
+					line-height:25px;
+				}
+			}
+			button{
+				padding:13px 20px;
+				border:1px solid $blueBack;
+				border-radius:5px;
+				color:$blueBack;
+				background:$whiteBack;
+				margin-top:60px;
+				margin-right:10px;
+
+				&:last-child{
+					margin-right:none;
+				}
+
+				&:hover{
+					color:$whiteBack;
+					background:$blueBack;
+				}
+			}
+		}
+	}
+}
+/*texnology*/
+#texnology{
+	background:$whiteBack;
+	padding-bottom:20px;
+	border-bottom:1px solid #E9E9E9;
+
+	.i-mack{
+		padding-top:30px;
+		.texText{
+			padding-top:50px;
+			h1{
+				font-size:34px;
+				margin-bottom:30px;
+			}
+			h5{
+				margin-bottom:30px;
+			}
+			p{
+				line-height:25px;
+			}
+		}
+		.texImg{
+			img{
+				width:100%;
+			}
+		}
+	}
+}
+/*helmet*/
+#helmet{
+	background:$whiteBack;
+	padding-bottom:20px;
+
+	.helm{
+		padding-top:30px;
+		.helmText{
+			padding-top:50px;
+			h1{
+				font-size:34px;
+				margin-bottom:30px;
+			}
+			h5{
+				margin-bottom:30px;
+			}
+			p{
+				line-height:25px;
+			}
+		}
+		.helmImg{
+			img{
+				width:100%;
+			}
+		}
+	}
+}
+/*mackbook*/
+#mackbook{
+	background:#F0F0F0;
+	height:560px;
+
+	.mack{
+		
+		ul{
+			margin-top:140px;
+			position: absolute;
+			z-index:1;
+
+			li{
+				width:346px;
+				height:136px;
+			    padding: 15px 40px;
+
+				    &:hover{
+				    	background:$blueBack;
+				    }
+
+
+				a{
+					width: 346px;
+				    height:136px;			    
+				    text-decoration:none;				   
+				    padding: 25px 28px;
+
+					div{
+
+						h1{
+							color:$blueBack;
+						}
+						p{
+							line-height:30px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.mack-tab{
+		position: absolute;
+	    right:72px;
+	    padding: 0;
+	    border: none;
+	    z-index: 2;
+		.mack-pane{
+			display:none;
+			padding:none;
+			margin-top:50px;
+		}
+	}
+}
+/*features*/
+#features{
+	background:#FFFFFF;
+	padding-top:70px;
+	padding-bottom:30px;
+
+	.featBoss{
+		
+		i{
+		    font-size: 3.3em;
+		    color:$blueBack;
+		}
+		h5{
+			margin:30px 0;
+			font-size:16px;
+			font-weight:400;
+		}
+		p{
+			font-size: 15px;
+    		color: #8d8d8d;
+    		margin: 0 0 10px;
+   			line-height: 25px;
+   			padding:0 10px;
+		}
+	}
+	.feat1{
+		margin-bottom:70px;
+	}
+}
+/*liveup*/
+#liveUp{
+	height:144px;
+
+
+	.liveText{
+		margin-top:40px;
+		h2{
+			font-size:45px;
+			color:$whiteBack;
+			font-weight:300;
+		}
+		p{
+			color:$whiteBack;
+			line-height:25px;
+		}
+	}
+	input{
+		height:45px;
+		float:left;
+		margin-top:50px;
+
+		&:first-child{
+			width:180px;
+			margin-right:10px;
+			border-left:3px solid $blueBack;
+			padding-left:10px;
+		}
+
+		&:nth-child(2){
+			width:270px;
+			margin-right:10px;
+			border-left:3px solid $blueBack;
+			padding-left:10px;
+		}
+
+		&:last-child{
+			width:144px;
+			height:44px;
+			background:none;
+			color:$whiteBack;
+			border:1px solid $whiteBack;
+			border-radius:3px;
+			outline-style:none;
+
+			&:hover{
+				background:$whiteBack;
+				color:$blueBack;
+			}
+		}
+	}
+}
+/*packages*/
+#packages{
+	background:$whiteBack;
+	height:800px;
+
+	.packText{
+		
+	}
+	.packTable{
+
+		.inPT{
+			height:605px;
+			background:#F7F7F7;
+		}
+		
+	}
 }

@@ -1,4 +1,252 @@
 body {
-  background: url("../_img/backgroundH.jpg"); }
+  background: url("../_img/backgroundH.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px; }
+
+/*head nav*/
+#head-nav {
+  padding-top: 25px; }
+  #head-nav .logo {
+    margin-right: 60px; }
+    #head-nav .logo img {
+      width: 130px; }
+  #head-nav .menu li {
+    float: left;
+    margin-left: 10px; }
+    #head-nav .menu li a {
+      color: #FFFFFF;
+      padding: 10px 5px;
+      text-decoration: none; }
+  #head-nav .login li {
+    float: left;
+    margin-left: 5px; }
+    #head-nav .login li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      color: #1AC6FF;
+      padding: 10px 5px;
+      border: 1px solid #1AC6FF; }
+      #head-nav .login li a:first-child {
+        border: none; }
+
+/*launch*/
+#launch {
+  padding: 200px 0; }
+  #launch h1 {
+    font-size: 3em;
+    margin: 20px 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-transform: uppercase; }
+  #launch h5 {
+    margin-bottom: 33px;
+    font-size: 24px;
+    color: #FFFFFF; }
+  #launch .btn-sart {
+    padding: 15px 70px;
+    background: #1AC6FF;
+    color: #FFFFFF;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase; }
+    #launch .btn-sart span {
+      margin-right: 5px; }
+  #launch .btn-tour {
+    padding: 15px 35px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: 15px; }
+    #launch .btn-tour:hover {
+      background: #FFFFFF;
+      color: #1AC6FF; }
+
+/*first logo*/
+#firstLogo {
+  height: 126px;
+  background: #F0F0F0;
+  padding-top: 35px; }
+  #firstLogo img {
+    margin-right: 60px; }
+
+/*startup*/
+#startup {
+  padding-bottom: 20px;
+  padding-top: 80px;
+  border-bottom: 1px solid #E9E9E9;
+  background: #FFFFFF; }
+  #startup .tabs ul li {
+    display: inline-block;
+    padding-bottom: 50px; }
+    #startup .tabs ul li a {
+      text-decoration: none;
+      font-size: 13px;
+      padding: 20px 60px; }
+  #startup .tabs #first .startImg1 img {
+    width: 100%; }
+  #startup .tabs #first .startText1 {
+    margin-top: 80px; }
+    #startup .tabs #first .startText1 h1 {
+      font-size: 34px;
+      margin-bottom: 30px; }
+    #startup .tabs #first .startText1 h5 {
+      margin-bottom: 30px; }
+    #startup .tabs #first .startText1 p {
+      line-height: 25px; }
+  #startup .tabs #first button {
+    padding: 13px 20px;
+    border: 1px solid #1AC6FF;
+    border-radius: 5px;
+    color: #1AC6FF;
+    background: #FFFFFF;
+    margin-top: 60px;
+    margin-right: 10px; }
+    #startup .tabs #first button:last-child {
+      margin-right: none; }
+    #startup .tabs #first button:hover {
+      color: #FFFFFF;
+      background: #1AC6FF; }
+
+/*texnology*/
+#texnology {
+  background: #FFFFFF;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E9E9E9; }
+  #texnology .i-mack {
+    padding-top: 30px; }
+    #texnology .i-mack .texText {
+      padding-top: 50px; }
+      #texnology .i-mack .texText h1 {
+        font-size: 34px;
+        margin-bottom: 30px; }
+      #texnology .i-mack .texText h5 {
+        margin-bottom: 30px; }
+      #texnology .i-mack .texText p {
+        line-height: 25px; }
+    #texnology .i-mack .texImg img {
+      width: 100%; }
+
+/*helmet*/
+#helmet {
+  background: #FFFFFF;
+  padding-bottom: 20px; }
+  #helmet .helm {
+    padding-top: 30px; }
+    #helmet .helm .helmText {
+      padding-top: 50px; }
+      #helmet .helm .helmText h1 {
+        font-size: 34px;
+        margin-bottom: 30px; }
+      #helmet .helm .helmText h5 {
+        margin-bottom: 30px; }
+      #helmet .helm .helmText p {
+        line-height: 25px; }
+    #helmet .helm .helmImg img {
+      width: 100%; }
+
+/*mackbook*/
+#mackbook {
+  background: #F0F0F0;
+  height: 560px; }
+  #mackbook .mack ul {
+    margin-top: 140px;
+    position: absolute;
+    z-index: 1; }
+    #mackbook .mack ul li {
+      width: 346px;
+      height: 136px;
+      padding: 15px 40px; }
+      #mackbook .mack ul li:hover {
+        background: #1AC6FF; }
+      #mackbook .mack ul li a {
+        width: 346px;
+        height: 136px;
+        text-decoration: none;
+        padding: 25px 28px; }
+        #mackbook .mack ul li a div h1 {
+          color: #1AC6FF; }
+        #mackbook .mack ul li a div p {
+          line-height: 30px; }
+  #mackbook .mack-tab {
+    position: absolute;
+    right: 72px;
+    padding: 0;
+    border: none;
+    z-index: 2; }
+    #mackbook .mack-tab .mack-pane {
+      display: none;
+      padding: none;
+      margin-top: 50px; }
+
+/*features*/
+#features {
+  background: #FFFFFF;
+  padding-top: 70px;
+  padding-bottom: 30px; }
+  #features .featBoss i {
+    font-size: 3.3em;
+    color: #1AC6FF; }
+  #features .featBoss h5 {
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 400; }
+  #features .featBoss p {
+    font-size: 15px;
+    color: #8d8d8d;
+    margin: 0 0 10px;
+    line-height: 25px;
+    padding: 0 10px; }
+  #features .feat1 {
+    margin-bottom: 70px; }
+
+/*liveup*/
+#liveUp {
+  height: 144px; }
+  #liveUp .liveText {
+    margin-top: 40px; }
+    #liveUp .liveText h2 {
+      font-size: 45px;
+      color: #FFFFFF;
+      font-weight: 300; }
+    #liveUp .liveText p {
+      color: #FFFFFF;
+      line-height: 25px; }
+  #liveUp input {
+    height: 45px;
+    float: left;
+    margin-top: 50px; }
+    #liveUp input:first-child {
+      width: 180px;
+      margin-right: 10px;
+      border-left: 3px solid #1AC6FF;
+      padding-left: 10px; }
+    #liveUp input:nth-child(2) {
+      width: 270px;
+      margin-right: 10px;
+      border-left: 3px solid #1AC6FF;
+      padding-left: 10px; }
+    #liveUp input:last-child {
+      width: 144px;
+      height: 44px;
+      background: none;
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      border-radius: 3px;
+      outline-style: none; }
+      #liveUp input:last-child:hover {
+        background: #FFFFFF;
+        color: #1AC6FF; }
+
+/*packages*/
+#packages {
+  background: #FFFFFF;
+  height: 800px; }
+  #packages .packTable .inPT {
+    height: 605px;
+    background: #F7F7F7; }
 
 /*# sourceMappingURL=style.css.map */
