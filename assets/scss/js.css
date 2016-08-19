@@ -1,0 +1,94 @@
+/*navbar effekt*/
+.inMenu {
+  display: none;
+  position: absolute;
+  background: #272727;
+  width: 200px;
+  height: 250px; }
+  .inMenu li {
+    clear: both;
+    margin-top: 20px;
+    clear: both; }
+    .inMenu li:hover {
+      color: #1AC6FF;
+      background: black; }
+    .inMenu li a {
+      padding: 5px 20px; }
+      .inMenu li a:hover {
+        background: black; }
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  background: #272727;
+  z-index: 10;
+  transition: all 0.5s ease;
+  padding: 10px 0; }
+
+/*opacityBTN*/
+.opacityBTN {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background: #272727;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  opacity: 0; }
+
+/*hide animation*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@keyframes hideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px); }
+  80% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+.hideLeft {
+  -webkit-animation-name: hideLeft;
+  animation-name: hideLeft; }
+
+@keyframes hideRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    -ms-transform: translateX(2000px);
+    transform: translateX(2000px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px); }
+  80% {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px); }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+.hideRight {
+  -webkit-animation-name: hideRight;
+  animation-name: hideRight; }
+
+/*# sourceMappingURL=js.css.map */

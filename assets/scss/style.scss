@@ -9,7 +9,7 @@ body{
 	background:url('../_img/backgroundH.jpg');
 	background-size:cover;
 	background-attachment: fixed;
-	font-size:16px;
+	font-size:100%;
 }
 p,h5{
 	font-family: 'PT Sans', sans-serif;
@@ -18,37 +18,62 @@ p,h5{
 .none{
 	display:none;
 }
+
 /*head nav*/
+.headBoss{
+	width:90%;
+	margin-left: 5%;
+
+}
 #head-nav{
-	padding-top:25px;
+	padding-top:1.56em;
+	
 	.logo{
-		margin-right:60px;
+		margin-right:3.75em;
 		img{
-			width:130px;
+			width:8.125em;
 		}
 	}
 	.menu{
+		padding-top: 10px;
 		li{
 			float:left;
-			margin-left:10px;
+			margin-left:0.625em;
 			
 			a{
+
 				color:$whiteBack;
 				padding:10px 5px;
 				text-decoration:none;
+
+				&:hover{
+					color:$blueBack;
+				}
 			}
+			.last{
+				&:hover{
+					color:$blueBack;
+					background:#272727;
+					border-top: 3px solid $blueBack;
+					}
+			}
+			.active{
+				color:$blueBack;
+			}
+			
 		}
 	}
 	.login{
+		padding-top: 10px;
 		li{
 			float:left;
-			margin-left:5px;
+			margin-left:0.625em;
 
 			a{
 				color:$whiteBack;
 				text-decoration:none;
 				color:#1AC6FF;
-				padding:10px 5px;
+				padding:0.625em 0.3125em;
 				border:1px solid #1AC6FF;
 
 				&:first-child{
@@ -61,22 +86,22 @@ p,h5{
 }
 /*launch*/
 #launch{
-	padding:200px 0;
+	padding:12.5em 0;
 
 	h1{
 		font-size:3em;
-	    margin: 20px 0 15px;
+	    margin: 1.25em 0 0.9375em;
     	font-weight: 300;
     	color:$whiteBack;
 		@include textT;
 	}
 	h5{
-	    margin-bottom: 33px;
-        font-size: 24px;
+	    margin-bottom: 2.06em;
+        font-size: 1.5em;
         color:$whiteBack;
 	}
 	.btn-sart{
-	    padding:15px 70px;
+	    padding:0.9375em 4.375em;
 	    background:$blueBack;
 	    color:$whiteBack;
 	    border-radius:3px;
@@ -84,17 +109,17 @@ p,h5{
 	    @include textT;
 
 	    span{
-			margin-right:5px;
+			margin-right:0.3125em;
 	    }
 	}
 	.btn-tour{
-		padding:15px 35px;
+		padding:0.9375em 2.1875em;
 		border:1px solid $whiteBack;
 		color:$whiteBack;
 		@include textT;
 		text-decoration:none;
 		border-radius:3px;
-		margin-left:15px;
+		margin-left:0.9375em ;
 
 		&:hover{
 			background:$whiteBack;
@@ -105,18 +130,18 @@ p,h5{
 }
 /*first logo*/
 #firstLogo{
-	height:126px;
+	height:7.875em;
 	background:#F0F0F0;
-	padding-top:35px;
+	padding-top:2.1875em;
 
 	img{
-		margin-right:60px;
+		margin-right:3.75em;
 	}
 }
 /*startup*/
 #startup{
-	padding-bottom:20px;
-	padding-top:80px;
+	padding-bottom:1.25em;
+	padding-top:5em;
 	border-bottom:1px solid #E9E9E9;
 	background:$whiteBack;
 
@@ -126,12 +151,12 @@ p,h5{
 
 			li{
 				display:inline-block;
-				padding-bottom:50px;
+				padding-bottom:3.125em;
 
 				a{
 					text-decoration:none;
-					font-size:13px;
-					padding:20px 60px;
+					font-size:0.8125em;
+					padding:1.25em 3.75em;
 
 				}
 			}
@@ -145,26 +170,26 @@ p,h5{
 			}
 
 			.startText1{
-				margin-top:80px;
+				margin-top:5em;
 				h1{
-					font-size:34px;
-					margin-bottom:30px;
+					font-size:2.125em;
+					margin-bottom:1.185em;
 				}
 				h5{
-					margin-bottom:30px;
+					margin-bottom:1.185em;
 				}
 				p{
-					line-height:25px;
+					line-height:1.5625em;
 				}
 			}
 			button{
-				padding:13px 20px;
+				padding:0.8125em 1.25em;
 				border:1px solid $blueBack;
-				border-radius:5px;
+				border-radius:0.3125em;
 				color:$blueBack;
 				background:$whiteBack;
-				margin-top:60px;
-				margin-right:10px;
+				margin-top:3.75em;
+				margin-right:0.625em;
 
 				&:last-child{
 					margin-right:none;
@@ -181,22 +206,22 @@ p,h5{
 /*texnology*/
 #texnology{
 	background:$whiteBack;
-	padding-bottom:20px;
+	padding-bottom:1.25em;
 	border-bottom:1px solid #E9E9E9;
 
 	.i-mack{
-		padding-top:30px;
+		padding-top:1.185em;
 		.texText{
-			padding-top:50px;
+			padding-top:3.125em;
 			h1{
-				font-size:34px;
-				margin-bottom:30px;
+				font-size:2.125em;
+				margin-bottom:1.185em;
 			}
 			h5{
-				margin-bottom:30px;
+				margin-bottom:1.185em;
 			}
 			p{
-				line-height:25px;
+				line-height:1.5625em;
 			}
 		}
 		.texImg{
@@ -209,21 +234,21 @@ p,h5{
 /*helmet*/
 #helmet{
 	background:$whiteBack;
-	padding-bottom:20px;
+	padding-bottom:1.25em;
 
 	.helm{
-		padding-top:30px;
+		padding-top:1.185em;
 		.helmText{
-			padding-top:50px;
+			padding-top:3.125em;
 			h1{
-				font-size:34px;
-				margin-bottom:30px;
+				font-size:2.125em;
+				margin-bottom:1.185em;
 			}
 			h5{
-				margin-bottom:30px;
+				margin-bottom:1.185em;
 			}
 			p{
-				line-height:25px;
+				line-height:1.5625em;
 			}
 		}
 		.helmImg{
@@ -241,14 +266,14 @@ p,h5{
 	.mack{
 		
 		ul{
-			margin-top:140px;
+			margin-top:8.75em;
 			position: absolute;
 			z-index:1;
 
 			li{
 				width:346px;
 				height:136px;
-			    padding: 15px 40px;
+			    padding:0.9375em 2.5em ;
 
 				    &:hover{
 				    	background:$blueBack;
@@ -259,7 +284,7 @@ p,h5{
 					width: 346px;
 				    height:136px;			    
 				    text-decoration:none;				   
-				    padding: 25px 28px;
+				    padding: 1.5625em 28px;
 
 					div{
 
@@ -267,7 +292,7 @@ p,h5{
 							color:$blueBack;
 						}
 						p{
-							line-height:30px;
+							line-height:1.185em;
 						}
 					}
 				}
@@ -283,15 +308,15 @@ p,h5{
 		.mack-pane{
 			display:none;
 			padding:none;
-			margin-top:50px;
+			margin-top:3.125em;
 		}
 	}
 }
 /*features*/
 #features{
 	background:#FFFFFF;
-	padding-top:70px;
-	padding-bottom:30px;
+	padding-top:4.375em;
+	padding-bottom:1.185em;
 
 	.featBoss{
 		
@@ -300,20 +325,20 @@ p,h5{
 		    color:$blueBack;
 		}
 		h5{
-			margin:30px 0;
+			margin:1.185em 0;
 			font-size:16px;
 			font-weight:400;
 		}
 		p{
-			font-size: 15px;
+			font-size: 0.9375em;
     		color: #8d8d8d;
-    		margin: 0 0 10px;
-   			line-height: 25px;
-   			padding:0 10px;
+    		margin: 0 0 0.625em;
+   			line-height: 1.5625em;
+   			padding:0 0.625em;
 		}
 	}
 	.feat1{
-		margin-bottom:70px;
+		margin-bottom:4.375em;
 	}
 }
 /*liveup*/
@@ -322,7 +347,7 @@ p,h5{
 
 
 	.liveText{
-		margin-top:40px;
+		margin-top:2.5em;
 		h2{
 			font-size:45px;
 			color:$whiteBack;
@@ -330,26 +355,26 @@ p,h5{
 		}
 		p{
 			color:$whiteBack;
-			line-height:25px;
+			line-height:1.5625em;
 		}
 	}
 	input{
 		height:45px;
 		float:left;
-		margin-top:50px;
+		margin-top:3.125em;
 
 		&:first-child{
 			width:180px;
-			margin-right:10px;
+			margin-right:0.625em;
 			border-left:3px solid $blueBack;
-			padding-left:10px;
+			padding-left:0.625em;
 		}
 
 		&:nth-child(2){
-			width:270px;
-			margin-right:10px;
+			width:16.875em;
+			margin-right:0.625em;
 			border-left:3px solid $blueBack;
-			padding-left:10px;
+			padding-left:0.625em;
 		}
 
 		&:last-child{
@@ -375,7 +400,7 @@ p,h5{
 
 	.packText{
 	   h1{
-	   	 margin: 20px 0 15px;
+	   	 margin: 1.25em 0 0.9375em;
 		font-weight: 300;
 		line-height: 1.1;
 		font-size: 45px;
@@ -392,8 +417,8 @@ p,h5{
 			background:#F7F7F7;
 
 			h1{
-			    padding: 20px 0 18px;
-		        font-size: 25px;
+			    padding: 1.25em 0 18px;
+		        font-size: 1.5625em;
 			    font-weight: 300;
 			    text-transform: uppercase;
 			    line-height: 1;
@@ -407,14 +432,14 @@ p,h5{
 				}
 			}
 			.domain{
-			    padding: 30px 15% 50px;
+			    padding: 1.185em 15% 3.125em;
 				ul{
 					li{
 					    height: 56px;
-					    padding: 15px 0;
+					    padding: 0.9375em 0;
 					    font-size: 16px;
 					    font-weight: 500;
-					    line-height: 25px;
+					    line-height: 1.5625em;
 					    color: #4c4c4c;
 					    border-bottom: 1px solid #dadada;
 					}
@@ -423,7 +448,7 @@ p,h5{
 			a{
 			    min-width: 144px;
 			    max-width: 100%;
-			    padding: 15px 25px;
+			    padding: 0.9375em 1.5625em;
 		        font-size: 14px;
     			font-weight: 500;
     			border:1px solid;
@@ -436,11 +461,11 @@ p,h5{
 #our{
 	background:$whiteBack;
 	.ourText{
-	    margin: 30px 0 80px 0;
+	    margin: 1.185em 0 5em 0;
 
 	    h1{
 	    	font-size: 45px;
-    	    margin: 20px 0 15px;
+    	    margin: 1.25em 0 0.9375em;
     		font-weight: 300;
     		line-height:1.1;
 
@@ -449,8 +474,8 @@ p,h5{
     		}
 	    }
 	    p{
-	    	margin-bottom: 30px;
-    	    line-height: 25px;
+	    	margin-bottom: 1.185em;
+    	    line-height: 1.5625em;
 	    }
 	}
 	.ourLogo{
@@ -459,9 +484,9 @@ p,h5{
 }
 /*clientSay*/
 #clientSay{
-	padding-top:50px;
+	padding-top:3.125em;
 	h1{
-	    margin: 20px 0 40px;
+	    margin: 1.25em 0 2.5em;
    	 	font-weight: 300;
    	 	font-size:45px;
    	 	color:$whiteBack;
@@ -502,19 +527,19 @@ p,h5{
 #whoSays{
 	background:$whiteBack;
 	.whoBoss{
-	    margin-top: 15px;
+	    margin-top: 0.9375em;
 	    border-bottom: 1px solid #e9e9e9;
 	    height: 120px;
 		.whoTab{
 
 			img{
-				width:70px;
+				width:4.375em;
 				border-radius:50%;
 				display:inline-block;
 			}
 			.whoText{
 				float:right;
-				margin-top: 20px;
+				margin-top: 1.25em;
 			}
 		}
 	}
@@ -523,21 +548,21 @@ p,h5{
 /*behind*/
 #behind{
 	background:$whiteBack;
-    min-height: 50px;
-    padding: 30px 0;
+    min-height: 3.125em;
+    padding: 1.185em 0;
 
     .behindText{
     	h1{
-		    margin: 20px 0 15px;
+		    margin: 1.25em 0 0.9375em ;
     		font-weight: 300;
     		font-size:45px;
     	}
     	p{
-		    margin: 0 0 10px;
-    		line-height: 25px;
+		    margin: 0 0 0.625em;
+    		line-height: 1.5625em;
 
     		&:first-child{
-			    margin-bottom: 30px;
+			    margin-bottom: 1.185em;
     		}
     		&:last-child{
     			
@@ -545,3 +570,106 @@ p,h5{
     	}
     }
  }
+ /*launch*/
+ #launchYS{
+ 	height:8.75em;
+ 	background:$blueBack;
+ 	color:$whiteBack;
+ 	padding-top:2.5em;
+
+ 	.launchYStext{
+
+ 		i{
+ 			font-size:3em;
+ 			margin-right:1.25em;
+ 		}
+ 		h2{
+ 			font-size:45px;
+ 		}
+
+ 	}
+ 	.launchYStbtn{
+ 		   a{
+ 			width:185px;
+ 			height:3.125em;
+ 			color:$whiteBack;
+ 			border-radius:3px;
+ 			text-align:center;
+ 			padding-top:10%;
+ 			text-decoration:none;
+ 			border:1px solid $whiteBack;
+
+ 			&:hover{
+ 				background:$whiteBack;
+ 				color:$blueBack;
+ 			}
+ 		}
+ 	}
+ }
+/*footer*/
+#footer{
+	padding-top:4.6875em;
+	color:$whiteBack;
+	i{
+		color:$blueBack;
+	}
+
+	.ltext{
+		img{
+			margin-bottom: 1.25em;
+		}
+		p{
+		    font-size: 0.9375em;
+    		line-height: 1.6;
+		    margin: 0 0 0.625em;
+		    text-align:left;
+		}
+	}
+	.socialN{
+		h3{
+		    margin-bottom: 1.5625em;
+		    font-weight: 500;
+		}
+		ul{
+			li{
+				padding-bottom:1.25em;
+				a{
+					i{
+						font-size:3.5em;
+
+					}
+				}
+			}
+		}
+	}
+	.ourC{
+		text-align:left;
+		h3{
+	     margin-bottom: 1.5625em;
+	     font-size:1.25em;
+   		 font-weight: 500;
+   		 text-align:center;
+   		}
+   		ul{
+   			li{
+   				margin-bottom: 0.9375em ;
+   				margin-right:0.625em;
+			    padding-left: 1.185em;
+			    font-size: 0.9375em ;
+			    line-height: 1.6;
+   			}
+   		}
+    
+	}
+	p{
+		font-size: 14px;
+	    font-weight: 300;
+	    text-align: center;
+	    color: #ffffff;
+	    opacity: 0.5;
+	}
+	
+}
+.footBoss{
+	padding-bottom:65px;
+}
