@@ -292,7 +292,7 @@ p,h5{
 							color:$blueBack;
 						}
 						p{
-							line-height:1.185em;
+							line-height:2.1;
 						}
 					}
 				}
@@ -309,6 +309,10 @@ p,h5{
 			display:none;
 			padding:none;
 			margin-top:3.125em;
+
+		}
+		.activ{
+				display:block;
 		}
 	}
 }
@@ -570,6 +574,19 @@ p,h5{
     	}
     }
  }
+ .bBox{
+ 	h4{
+ 		margin: 15px 0 5px;
+	    font-size: 15px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    line-height: 18px;
+	    color:$blueBack;
+ 		p{
+
+ 		}
+ 	}
+ }
  /*launch*/
  #launchYS{
  	height:8.75em;
@@ -612,6 +629,7 @@ p,h5{
 	color:$whiteBack;
 	i{
 		color:$blueBack;
+		padding-right: 10px;
 	}
 
 	.ltext{

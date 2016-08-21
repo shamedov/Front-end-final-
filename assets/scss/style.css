@@ -191,7 +191,7 @@ p, h5 {
         #mackbook .mack ul li a div h1 {
           color: #1AC6FF; }
         #mackbook .mack ul li a div p {
-          line-height: 1.185em; }
+          line-height: 2.1; }
   #mackbook .mack-tab {
     position: absolute;
     right: 72px;
@@ -202,6 +202,8 @@ p, h5 {
       display: none;
       padding: none;
       margin-top: 3.125em; }
+    #mackbook .mack-tab .activ {
+      display: block; }
 
 /*features*/
 #features {
@@ -380,6 +382,14 @@ p, h5 {
     #behind .behindText p:first-child {
       margin-bottom: 1.185em; }
 
+.bBox h4 {
+  margin: 15px 0 5px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #1AC6FF; }
+
 /*launch*/
 #launchYS {
   height: 8.75em;
@@ -409,7 +419,8 @@ p, h5 {
   padding-top: 4.6875em;
   color: #FFFFFF; }
   #footer i {
-    color: #1AC6FF; }
+    color: #1AC6FF;
+    padding-right: 10px; }
   #footer .ltext img {
     margin-bottom: 1.25em; }
   #footer .ltext p {

@@ -9,20 +9,21 @@
 	<link rel="stylesheet" type="text/css" href="assets/scss/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/scss/js.css">
 	<link rel="stylesheet" href="assets/css/font-lineicons.css">
+	<link rel="stylesheet" type="text/css" href="assets/scss/media.css">
 	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<section id="wrap"><!--esas section start-->
+	<section id="wrap" ><!--esas section start-->
 		<section id="head-nav">
 			<div class="row headBoss">
 				<div class="logo pull-left">
 					<img src="assets/_img/logo.png">
 				</div>
 				<ul class="pull-left menu">
-					<li><a href="#launch" class="active">HOME</a></li>
+					<li><a href="#launch">HOME</a></li>
 					<li><a href="#startup">ABOUT</a></li>
 					<li><a href="#mackbook">FEATURES</a></li>
 					<li><a href="#packages">PRICES</a></li>
@@ -123,9 +124,9 @@
 		</section>
 		<section id="mackbook">
 			<div class="container mack">
-				<ul>
+				<ul class="tabz">
 					<li>
-						<a href="#">
+						<a href="#mack1">
 							<div class="">
 								<h1>LOREM DOLOR</h1>
 								<p>Sit amet, consectetur adipiscing elit
@@ -134,7 +135,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="#mack2">
 							<div class="">
 								<h1>LOREM DOLOR</h1>
 								<p>Sit amet, consectetur adipiscing elit
@@ -143,7 +144,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="#mack3">
 							<div class="">
 								<h1>LOREM DOLOR</h1>
 								<p>Sit amet, consectetur adipiscing elit
@@ -155,13 +156,13 @@
 			</div>
 			<div class="clearfix"></div>
 			<div class="mack-tab">
-				<div class="mack-pane" >
-					<img src="assets/_img/features_1.png">
+				<div class="mack-pane activ" id="mack1">
+					<img class="geleee" src="assets/_img/features_1.png">
 				</div>
-				<div class="mack-pane" >
-					<img src="assets/_img/features_2.png">
+				<div class="mack-pane" id="mack2" >
+					<img class="geleee1" src="assets/_img/features_2.png">
 				</div>
-				<div class="mack-pane">
+				<div class="mack-pane" id="mack3">
 					<img src="assets/_img/features_3.png">
 				</div>
 			</div>
@@ -216,7 +217,7 @@
 		</section>
 		<section id="liveUp" class="text-center">
 			<div class="container">
-				<div class="row">
+				<div class="row liveBoss">
 					<div class="col-md-5 liveText">
 						<h2>GET LIVE UPDATES</h2>
 						<p>No spam promise - only latest news and prices!</p>
@@ -394,25 +395,57 @@
 					nihilamane umquam magnum ac cognitione.</p>
 				</div>
 				<div class="behindTeam">
-					<div class="col-md-3">
+					<div class="col-md-3 bBox">
 						<img src="assets/_img/team-1.jpg">
 						<h4>Mike Bolder</h4>
-						<p>DEVELOPER</p>
+						<p>Developer</p>
+						<div class=" boxhover ">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit rerum aut praesentium labore, possimus consequuntur dicta reprehenderit</p>
+							<ul>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 bBox">
 						<img src="assets/_img/team-2.jpg">
-						<h4>Mike Bolder</h4>
-						<p>DEVELOPER</p>
+						<h4>Elise White</h4>
+						<p>Developer</p>
+						<div class=" boxhover ">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit rerum aut praesentium labore, possimus consequuntur dicta reprehenderit</p>
+							<ul>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 bBox">
 						<img src="assets/_img/team-3.jpg">
-						<h4>Mike Bolder</h4>
-						<p>DEVELOPER</p>
+						<h4>Emma Stoun</h4>
+						<p>Developer</p>
+						<div class=" boxhover ">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit rerum aut praesentium labore, possimus consequuntur dicta reprehenderit</p>
+							<ul>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 bBox">
 						<img src="assets/_img/team-4.jpg">
 						<h4>Mike Bolder</h4>
-						<p>DEVELOPER</p>
+						<p>Developer</p>
+						<div class=" boxhover ">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit rerum aut praesentium labore, possimus consequuntur dicta reprehenderit</p>
+							<ul>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
