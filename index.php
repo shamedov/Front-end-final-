@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<?php
+	include "php/db.php";
+ ?>
 	<section id="wrap" ><!--esas section start-->
 		<section id="head-nav">
 			<div class="row headBoss">
@@ -42,16 +46,33 @@
 					</li>
 				</ul>
 				<ul class="pull-right login">
-					<li><a href="#">LOGIN</a></li>
-					<li><a href="#">SIGN UP</a></li>
+					<li><a href="php/index.php">LOGIN</a></li>
+					<li><a href="php/signup.php">SIGN UP</a></li>
 				</ul>
 			</div>
 			<a href="#launch" class="opacityBTN fa fa-chevron-up"></a>
 		</section>
 		<section id="launch" class="container text-center">
+			<?php 
+				include "php/db.php";
+				$sql = "SELECT * FROM `header`";
+    			$query = mysqli_query($con, $sql);
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h1 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h5 = $row['text'];
+
+
+			 ?>
 			<div class="row">
-				<h1>Do not wait — <span>launch</span> your startup now!</h1>
-				<h5>this tempate is flexible enough to suit any kind of startup or new business</h5>
+				<h1>
+					<?php echo $h1 ?>
+				</h1>
+				<h5>
+					<?php echo $h5 ?>
+				</h5>
 				<a href="#" class="btn-sart"><span class="fa fa-shopping-cart"></span>Get started</a>
 				<a href="#" class="btn-tour">Take tour</a>
 			</div>
@@ -66,6 +87,26 @@
 			</div>
 		</section>
 		<section id="startup" class="text-center">
+			<?php 
+				include "php/db.php";
+				$sql = "SELECT * FROM `about`";
+    			$query = mysqli_query($con, $sql);
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h1 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h5 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$p = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$btn1 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$btn2 = $row['text'];
+			 ?>
 			<div class="container tabs text-center">
 				<ul class="">
 					<li><a href="#first">FIRST TAB</a></li>
@@ -78,13 +119,22 @@
 			        </div>
 			        <div class="col-sm-12 col-sm-12 col-md-6 startText1">
 
-			        	<h1>FOR EVERY STARTUP</h1>
-			        	<h5>Lorem ipsum dolor sit atmet sit dolor greand fdanrh
-						sdfs sit atmet sit dolor greand fdanrh sdfs</h5>
-						<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione. </p>
+			        	<h1>
+			        		<?php echo $h1 ?>
+			        	</h1>
+			        	<h5>
+			        		<?php echo $h5 ?>
+			        	</h5>
+						<p>
+							<?php echo $p ?>
+						</p>
 			        </div>
-			        <button>GET TEMPLATE</button>
-			        <button>SEE ELEMENTS</button>
+			        <button>
+			        	<?php echo $btn1 ?>
+			        </button>
+			        <button>
+			        	<?php echo $btn2 ?>
+			        </button>
 			    </div>
 			  <!--  <div id="second">
 			        <h2>Миллер</h2>
@@ -97,12 +147,31 @@
 			</div>
 		</section>
 		<section id="texnology">
+			<?php 
+				include "php/db.php";
+				$sql = "SELECT * FROM `feature`";
+    			$query = mysqli_query($con, $sql);
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h1 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h5 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$p = $row['text'];
+			 ?>
 			<div class="container i-mack">	        
 		        <div class="col-md-6 texText">
-		        	<h1>NEW AGE TECHNOLOGY</h1>
-		        	<h5>Lorem ipsum dolor sit atmet sit dolor greand fdanrh
-					sdfs sit atmet sit dolor greand fdanrh sdfs</h5>
-					<p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione. </p>
+		        	<h1>
+		        		<?php echo $h1 ?>
+		        	</h1>
+		        	<h5>
+		        		<?php echo $h5 ?>
+		        	</h5>
+					<p>
+						<?php echo $p ?>
+					</p>
 		        </div>
 		        <div class="col-md-6 texImg">
 		        	<img src="assets/_img/content_image1.png">
@@ -168,22 +237,66 @@
 			</div>
 		</section>
 		<section id="features" class="text-center">
+			<?php 
+				include "php/db.php";
+				$sql = "SELECT * FROM `featureSecond`";
+    			$query = mysqli_query($con, $sql);
+
+    			$row = mysqli_fetch_assoc($query);
+    			$iClass1 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h51 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$p1 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$iClass2 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h52 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$p2 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$iClass3 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h53 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$p3 = $row['text'];
+			 ?>
 			<div class="container featBoss">
 				<div class="row feat1">
 					<div class="col-md-3">
-						<i class="icon icon-office-44 highlight"></i>
-						<h5>FEATURE1</h5>
-						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
+						<i class="icon <?php echo $iClass1 ?> highlight"></i>
+						<h5>
+							<?php echo $h51 ?>
+						</h5>
+						<p>
+							<?php echo $p1 ?>
+						</p>
 					</div>
 					<div class="col-md-3">
-						<i class="icon icon-shopping-18 highlight"></i>
-						<h5>FEATURE1</h5>
-						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
+						<i class="icon <?php echo $iClass2 ?> highlight"></i>
+						<h5>
+							<?php echo $h52 ?>
+						</h5>
+						<p>
+							<?php echo $p2 ?>
+						</p>
 					</div>
 					<div class="col-md-3">
-						<i class="icon icon-seo-icons-27 highlight"></i>
-						<h5>FEATURE1</h5>
-						<p>Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.</p>
+						<i class="icon <?php echo $iClass3 ?> highlight"></i>
+						<h5>
+							<?php echo $h53 ?>
+						</h5>
+						<p>
+							<?php echo $p3 ?>
+						</p>
 					</div>
 					<div class="col-md-3">
 						<i class="icon icon-office-24 highlight"></i>
@@ -383,6 +496,32 @@
 			</div>
 		</section>
 		<section id="behind" class="text-center">
+			<?php 
+				include "php/db.php";
+				$sql = "SELECT * FROM `team`";
+    			$query = mysqli_query($con, $sql);
+
+    			$row = mysqli_fetch_assoc($query);
+    			$img1 = $row['text'];
+    			$row = mysqli_fetch_assoc($query);
+    			$img2 = $row['text'];
+    			$row = mysqli_fetch_assoc($query);
+    			$img3 = $row['text'];
+    			$row = mysqli_fetch_assoc($query);
+    			$img4 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$h41 = $row['text'];
+    			$row = mysqli_fetch_assoc($query);
+    			$h42 = $row['text'];
+    			$row = mysqli_fetch_assoc($query);
+    			$h43 = $row['text'];
+    			$row = mysqli_fetch_assoc($query);
+    			$h44 = $row['text'];
+
+    			$row = mysqli_fetch_assoc($query);
+    			$p = $row['text'];
+			 ?>
 			<div class="container">
 				<div class="behindText">
 					<h1>BEHIND THE SCENES</h1>
@@ -396,9 +535,9 @@
 				</div>
 				<div class="behindTeam">
 					<div class="col-md-3 bBox">
-						<img src="assets/_img/team-1.jpg">
-						<h4>Mike Bolder</h4>
-						<p>Developer</p>
+						<img src="assets/_img/<?php echo $img1 ?>">
+						<h4><?php echo $h41 ?></h4>
+						<p><?php echo $p ?></p>
 						<div class=" boxhover ">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit rerum aut praesentium labore, possimus consequuntur dicta reprehenderit</p>
 							<ul>
@@ -409,9 +548,9 @@
 						</div>
 					</div>
 					<div class="col-md-3 bBox">
-						<img src="assets/_img/team-2.jpg">
-						<h4>Elise White</h4>
-						<p>Developer</p>
+						<img src="assets/_img/<?php echo $img2 ?>">
+						<h4><?php echo $h42 ?></h4>
+						<p><?php echo $p ?></p>
 						<div class=" boxhover ">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit rerum aut praesentium labore, possimus consequuntur dicta reprehenderit</p>
 							<ul>
@@ -422,9 +561,9 @@
 						</div>
 					</div>
 					<div class="col-md-3 bBox">
-						<img src="assets/_img/team-3.jpg">
-						<h4>Emma Stoun</h4>
-						<p>Developer</p>
+						<img src="assets/_img/<?php echo $img3 ?>">
+						<h4><?php echo $h43 ?></h4>
+						<p><?php echo $p ?></p>
 						<div class=" boxhover ">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit rerum aut praesentium labore, possimus consequuntur dicta reprehenderit</p>
 							<ul>
@@ -435,9 +574,9 @@
 						</div>
 					</div>
 					<div class="col-md-3 bBox">
-						<img src="assets/_img/team-4.jpg">
-						<h4>Mike Bolder</h4>
-						<p>Developer</p>
+						<img src="assets/_img/<?php echo $img4 ?>">
+						<h4><?php echo $h44 ?></h4>
+						<p><?php echo $p ?></p>
 						<div class=" boxhover ">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit rerum aut praesentium labore, possimus consequuntur dicta reprehenderit</p>
 							<ul>
