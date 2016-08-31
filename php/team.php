@@ -40,13 +40,28 @@
 		h42: <input type="text" name="h42" value="<?= $h42 ?>"><br><br>
 		h43: <input type="text" name="h43" value="<?= $h43 ?>"><br><br>
 		h44: <input type="text" name="h44" value="<?= $h44 ?>"><br><br>
-		
+
 		p: <input type="text" name="p" value="<?= $p ?>">
 		<input type="submit" name="submit">
 	</form>
 
 </body>
 </html>
+
+<style>
+
+		body{
+			background-image: url(../assets/_img/backgroundH.jpg);
+		}
+		
+		input{
+			padding: 10px 50px;
+			margin: 10px;
+			display: block;
+			border-left: 5px solid #19c5ff;
+		}
+
+	</style>
 
 <?php 
 

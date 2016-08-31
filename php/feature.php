@@ -28,6 +28,21 @@
 </body>
 </html>
 
+<style>
+
+		body{
+			background-image: url(../assets/_img/backgroundH.jpg);
+		}
+		
+		input{
+			padding: 10px 50px;
+			margin: 10px;
+			display: block;
+			border-left: 5px solid #19c5ff;
+		}
+
+	</style>
+
 <?php 
 
 

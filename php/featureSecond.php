@@ -37,15 +37,15 @@
 		$p3=$row['text'];
 	?>
 	<form action="" method="POST" accept-charset="utf-8">
-		iClass1: <input type="text" name="iClass1" value="<?= $iClass1 ?>"><br><br>
+		iClass1: <input type="text" name="iClass1" value="<?= $iClass1 ?>">
 		h51: <input type="text" name="h51" value="<?= $h51 ?>">
 		p1: <input type="text" name="p1" value="<?= $p1 ?>">
 
-		iClass2: <input type="text" name="iClass2" value="<?= $iClass2 ?>"><br><br>
+		iClass2: <input type="text" name="iClass2" value="<?= $iClass2 ?>">
 		h52: <input type="text" name="h52" value="<?= $h52 ?>">
 		p2: <input type="text" name="p2" value="<?= $p2 ?>">
 
-		iClass3: <input type="text" name="iClass3" value="<?= $iClass3 ?>"><br><br>
+		iClass3: <input type="text" name="iClass3" value="<?= $iClass3 ?>">
 		h53: <input type="text" name="h53" value="<?= $h53 ?>">
 		p3: <input type="text" name="p3" value="<?= $p3 ?>">
 		<input type="submit" name="submit">
@@ -53,6 +53,20 @@
 
 </body>
 </html>
+	<style>
+
+		body{
+			background-image: url(../assets/_img/backgroundH.jpg);
+		}
+		
+		input{
+			padding: 10px 50px;
+			margin: 10px;
+			display: block;
+			border-left: 5px solid #19c5ff;
+		}
+
+	</style>
 
 <?php 
 
